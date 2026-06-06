@@ -52,13 +52,13 @@ if(isset($_POST['register'])){
             display: flex;
             background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 55%, #38bdf8 100%);
             position: relative;
-            overflow: hidden;
+            overflow-y: auto;
         }
 
         body::before {
             content: '';
             position: absolute;
-            width: 500px; height: 500px;
+            width: 500px; min-height: 100vh;
             background: rgba(255,255,255,0.04);
             border-radius: 50%;
             top: -150px; left: -100px;
